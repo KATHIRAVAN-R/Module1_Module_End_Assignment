@@ -438,11 +438,18 @@ nav .nav-item:hover .nav-link {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--primary);
   font-weight: bolder;
+  transition: all 0.5s;
 }
 .contact-form input[type="submit"]:hover {
   color: var(--primary);
   background-color: white;
   box-shadow: 0 20px 50px var(--primary-dark);
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-align: center;
 }
 /* containner 6 ends */
 /* footer starts*/
@@ -472,6 +479,7 @@ nav .nav-item:hover .nav-link {
 .footer_cont_cards a img {
   border-radius: 2rem;
 }
+
 
 /* footer ends */
 /* Mobile max - 768px starts */
