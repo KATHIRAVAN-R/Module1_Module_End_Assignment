@@ -64,14 +64,14 @@ nav .nav-item {
   transition: all 0.5s;
 }
 nav .navbar-brand:hover {
-  color: var(--surface);
+  color: var(--primary);
   box-shadow: 2px 2px 10px 2px var(--muted);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   transform: scale(1.2);
 }
 nav .nav-item:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
   border-radius: 1em;
   box-shadow: 2px 2px 5px 2px var(--muted);
   transform: scale(1.1);
@@ -111,17 +111,19 @@ nav .nav-item:hover .nav-link {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  font-variant: small-caps;
 }
 
 .btn-primary {
   background-color: var(--primary);
   color: white;
+  border: none;
 }
-.btn-secondary,
-.btn-outline {
+.btn-secondary{
   background: #ffffff;
   border-color: #e2e8f0;
   color: var(--secondary);
+  border: none;
 }
 .btn {
   display: inline-flex;
@@ -130,12 +132,24 @@ nav .nav-item:hover .nav-link {
   gap: 0.5rem;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
-  border: wpx solid transparent;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease-out,
-    background 0.2s ease;
+  transition: transform all;
+  font-weight: 700;
+}
+.btn:hover {
+  border: none;
+  transform: translateY(-1px);
+  box-shadow: 0 22px 50px 0 var(--primary);
+}
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: white;
+  font-weight: 700;
+}
+.btn-secondary:hover {
+  color: white;
+  background-color: var(--primary);
+  font-weight: 700;
 }
 .hero-text a {
   text-decoration: none;
@@ -230,7 +244,9 @@ nav .nav-item:hover .nav-link {
 .sub_cont4_texts h2,
 .sub_cont5_texts h2,
 .sub_cont6_texts h2 {
-  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
   line-height: 1.05;
 }
 .sub_cont2_cards,
@@ -257,8 +273,24 @@ nav .nav-item:hover .nav-link {
   background: white;
   box-shadow: var(--shadow);
 }
+.cont2-card1 h3,
+.cont2-card2 h3,
+.cont2-card3 h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: larger;
+}
+.sub_cont2_card {
+  transition: all 0.5s;
+}
+.sub_cont2_card:hover{
+  transform: scale(1.1);
+}
+
+
 .card1-img {
-  background-image: url(https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80);
+  background-image: url(/images/img1.jpg);
 }
 .card2-img {
   background-image: url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80);
@@ -286,6 +318,7 @@ nav .nav-item:hover .nav-link {
 /* container 3 starts */
 .sub_cont3 {
   background: #ffffff;
+  padding: 1em;
 }
 .cont3-card1, .cont3-card2,.cont3-card3 {
   padding: 1.75rem;
@@ -302,6 +335,10 @@ nav .nav-item:hover .nav-link {
 }
 .sub_cont3_card h3 {
   margin-bottom: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: larger;
 }
 .sub_cont3_card p {
   color: var(--muted);
@@ -353,13 +390,21 @@ nav .nav-item:hover .nav-link {
 
 
 /* container 4 ends */
+/* container 5 start */
 .cont5_card1,.cont5_card2,.cont5_card3 {
   padding: 1.75rem;
   border-radius: 1.5rem;
   background: white;
   box-shadow: 0 3px 47px rgba(20, 30, 55, 0.12);
-
+  
 }
+.cont5_card  h3{
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: larger;
+}
+/* container 5 ends */
 /* containner 6 starts */
 .contact-form {
   display: grid;
@@ -376,6 +421,23 @@ nav .nav-item:hover .nav-link {
   border-radius: 1rem;
   padding: 1rem 1rem;
   background: white;
+}
+.form-grid input, .contact-form textarea{
+  color: var(--primary);
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
+
+}
+.contact-form input[type="submit"] {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--primary);
+  font-weight: bolder;
+}
+.contact-form input[type="submit"]:hover {
+  color: var(--primary);
+  background-color: white;
+  box-shadow: 0 20px 50px var(--primary-dark);
 }
 /* containner 6 ends */
 /* footer starts*/
