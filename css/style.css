@@ -246,8 +246,8 @@ nav .nav-item:hover .nav-link {
   gap: 1.5rem;
 }
 .sub_cont4_blog {
-  grid-template-columns: 1.4fr 0.6fr;
-  gap: 2rem;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: stretch;
 }
 .cont2-card1,
 .cont2-card2,
@@ -323,10 +323,93 @@ nav .nav-item:hover .nav-link {
 /* container 3 ends */
 
 /* container 4 starts */
+.sub_cont4_lists {
+  margin-top: 1.5rem;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+.sub_cont4_lists li {
+  position: relative;
+  padding-left: 1.8rem;
+}
+.sub_cont4_lists li::before {
+  content: "~";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+}
+.sub_cont4_cards {
+    background: linear-gradient(180deg, #ffffff 0%, #fff5eb 100%);
+    border-radius: 1.75rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 
 /* container 4 ends */
+.cont5_card1,.cont5_card2,.cont5_card3 {
+  padding: 1.75rem;
+  border-radius: 1.5rem;
+  background: white;
+  box-shadow: 0 3px 47px rgba(20, 30, 55, 0.12);
 
+}
+/* containner 6 starts */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  background: white;
+}
+/* containner 6 ends */
+/* footer starts*/
+.footer_cont {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer_cont_texts{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.footer_cont_texts, .footer_cont_cards, .footer_copyrights {
+  padding: 1rem;
+  
+}
+.footer_cont_cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* box-shadow:0 3px 47px rgba(20, 30, 55, 0.12); */
+
+}
+.footer_cont_cards a img{
+  border-radius: 2rem;
+
+}
+
+
+/* footer ends */
 /* Mobile max - 768px starts */
 @media screen and (max-width: 768px) {
   .sub_cont1 {
