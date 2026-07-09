@@ -294,7 +294,7 @@ nav .nav-item:hover .nav-link {
 }
 
 .card1-img {
-  background-image: url(/images/img1.jpg);
+  background-image: url(../images/img1.jpg);
 }
 .card2-img {
   background-image: url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80);
@@ -475,6 +475,10 @@ nav .nav-item:hover .nav-link {
 .footer_cont_cards,
 .footer_copyrights {
   padding: 1rem;
+}
+.footer_cont_texts a{
+  text-decoration: none;
+  color: var(--muted);
 }
 .footer_cont_cards {
   display: flex;
