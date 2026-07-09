@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   font-family: Inter, system-ui, sans-serif;
   color: var(--text);
   line-height: 1.6;
